@@ -560,6 +560,9 @@ body {
 img, embed, object, video {
   max-width: 100%; }
 
+.post-container img {
+  border: 1px solid #eee; }
+
 a {
   color: #000;
   transition: color 0.3s; }
@@ -697,3 +700,27 @@ main {
   letter-spacing: 0.5px;
   padding-bottom: 10px;
   font-weight: normal; }
+
+h3 {
+  padding: 0.25em 0.5em;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #494949;
+  background: #f3f3f3; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%; }
+
+table tr {
+  border-bottom: solid 1px #eee;
+  cursor: pointer; }
+
+table tr:hover {
+  background-color: #f3f3f3; }
+
+table th, table td {
+  text-align: center;
+  width: 25%;
+  padding: 15px 0; }
