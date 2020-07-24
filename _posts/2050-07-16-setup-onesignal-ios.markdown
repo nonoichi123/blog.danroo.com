@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Vagrantコマンド集"
-date:   2019-09-16 00:00:00 +0000
+date:   2050-09-16 00:00:00 +0000
 categories: Vagrant Command
 ---
 Vagrant でよく使うコマンドの一覧です。

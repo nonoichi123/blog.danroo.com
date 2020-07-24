@@ -559,9 +559,9 @@ body {
 
 img, embed, object, video {
   max-width: 100%; }
-
-.post-container img {
-  border: 1px solid #eee; }
+  @media screen and (min-width: 768px) {
+    img, embed, object, video {
+      max-height: 350px; } }
 
 a {
   color: #000;
@@ -679,6 +679,8 @@ main {
 
 .post-container {
   padding-left: 40px; }
+  .post-container img {
+    border: 1px solid #eee; }
 
 .post {
   font-family: 'Merriweather', sans-serif;
