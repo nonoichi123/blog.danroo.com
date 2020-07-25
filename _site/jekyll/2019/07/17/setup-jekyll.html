@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<html lang="ja">
+
+<head><meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
@@ -12,8 +12,8 @@
 <meta property="og:title" content="Jekyll でサイトを作る" />
 <meta name="description" content="Jekyll はプレーンテキストで静的サイトやブログが作成できるサービスです。 GitHub pagesやFirebase Hosting、Heroku、レンタルサーバなどの 様々な環境で簡単に公開できるようになっています。" />
 <meta property="og:description" content="Jekyll はプレーンテキストで静的サイトやブログが作成できるサービスです。 GitHub pagesやFirebase Hosting、Heroku、レンタルサーバなどの 様々な環境で簡単に公開できるようになっています。" />
-<link rel="canonical" href="http://localhost:4000/jekyll/2019/07/17/setup-jekyll.html" />
-<meta property="og:url" content="http://localhost:4000/jekyll/2019/07/17/setup-jekyll.html" />
+<link rel="canonical" href="/jekyll/2019/07/17/setup-jekyll.html" />
+<meta property="og:url" content="/jekyll/2019/07/17/setup-jekyll.html" />
 <meta property="og:site_name" content="rhino no log …" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-07-17T09:00:00+09:00" />
@@ -23,25 +23,34 @@
 "headline": "Jekyll でサイトを作る",
 "datePublished": "2019-07-17T09:00:00+09:00",
 "description": "Jekyll はプレーンテキストで静的サイトやブログが作成できるサービスです。 GitHub pagesやFirebase Hosting、Heroku、レンタルサーバなどの 様々な環境で簡単に公開できるようになっています。",
-"url": "http://localhost:4000/jekyll/2019/07/17/setup-jekyll.html"}</script>
+"url": "/jekyll/2019/07/17/setup-jekyll.html"}</script>
 <!-- End Jekyll SEO tag -->
-</head>
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXR43CX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173547685-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-173547685-1');
+	</script></head>
+
+<body>
 	<main class="container">
 		<section class="about">
 			<a href="/"><img src="/assets/portfolio.png" alt="rhinonolike"></a>
 			<h2>rhinonolike</h2>
 			<p class="tagline"></p>
 			<ul class="social">
-				<a href="https://github.com/nonoichi123"><li><i class="icon-github-circled"></i></li></a>
-				<!-- <a href="https://www.instagram.com/nonomurashoichi"><li><i class="icon-instagram"></i></li></a> -->
-				<a href="https://twitter.com/nonoichi123"><li><i class="icon-twitter-squared"></i></li></a>
+				<a href="https://github.com/nonoichi123">
+					<li><i class="icon-github-circled"></i></li>
+				</a>
+				<a href="https://twitter.com/nonoichi123">
+					<li><i class="icon-twitter-squared"></i></li>
+				</a>
 			</ul>
-			<p>&copy; 2019 All rights reserved</p>
+			<p>&copy; 2020 All rights reserved</p>
 		</section>
 		<section class="content">
 			<div class="post-container">
@@ -135,6 +144,25 @@ $ bundle exec jekyll serve
   <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 		</section>
-	</main><script id="dsq-count-scr" src="//blog-danroo-com.disqus.com/count.js" async></script>
+	</main>
+
+	
+	<!-- Ptengine  -->
+	<script type="text/javascript">
+		window._pt_lt = new Date().getTime();
+		window._pt_sp_2 = [];
+		_pt_sp_2.push("setAccount,6d777cd9");
+		var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		(function () {
+			var atag = document.createElement("script");
+			atag.type = "text/javascript";
+			atag.async = true;
+			atag.src = _protocol + "js.ptengine.jp/6d777cd9.js";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(atag, s);
+		})();
+	</script>
+	<!-- Ptengine  --><script id="dsq-count-scr" src="//blog-danroo-com.disqus.com/count.js" async></script>
 </body>
+
 </html>

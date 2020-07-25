@@ -1,50 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-{% if jekyll.environment == "production" %}
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WXR43CX');</script>
-<!-- End Google Tag Manager -->
-{%- endif -%}
-
 	{%- include head.html -%}
-</head>
-<body>
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXR43CX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 
+	{% if jekyll.environment == "production" %}
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-173547685-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-173547685-1');
+	</script>
+	{%- endif -%}
+</head>
+
+<body>
 	<main class="container">
 		<section class="about">
 			<a href="/"><img src="{{ "/assets/portfolio.png" | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
 			<h2>{{ site.plainwhite.name }}</h2>
 			<p class="tagline">{{ site.plainwhite.tagline }}</p>
 			<ul class="social">
-				<a href="https://github.com/{{ site.plainwhite.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
-				<!-- <a href="https://www.instagram.com/{{ site.plainwhite.social_links.instagram }}"><li><i class="icon-instagram"></i></li></a> -->
-				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
+				<a href="https://github.com/{{ site.plainwhite.social_links.github }}">
+					<li><i class="icon-github-circled"></i></li>
+				</a>
+				<a href="https://twitter.com/{{ site.plainwhite.social_links.twitter }}">
+					<li><i class="icon-twitter-squared"></i></li>
+				</a>
 			</ul>
-			<p>&copy; 2019 All rights reserved</p>
+			<p>&copy; 2020 All rights reserved</p>
 		</section>
 		<section class="content">
 			{{ content }}
 		</section>
 	</main>
-	{%- if site.plainwhite.analytics_id -%}
-	<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
 
-		gtag('config', '{{ site.plainwhite.analytics_id }}');
+	{% if jekyll.environment == "production" %}
+	<!-- Ptengine  -->
+	<script type="text/javascript">
+		window._pt_lt = new Date().getTime();
+		window._pt_sp_2 = [];
+		_pt_sp_2.push("setAccount,6d777cd9");
+		var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		(function () {
+			var atag = document.createElement("script");
+			atag.type = "text/javascript";
+			atag.async = true;
+			atag.src = _protocol + "js.ptengine.jp/6d777cd9.js";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(atag, s);
+		})();
 	</script>
+	<!-- Ptengine  -->
 	{%- endif -%}
 
 	<script id="dsq-count-scr" src="//blog-danroo-com.disqus.com/count.js" async></script>
 </body>
+
 </html>
