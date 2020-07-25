@@ -9,6 +9,11 @@
             <lastmod>2019-06-07T00:00:00+00:00</lastmod>
             <priority>1.00</priority>
         </url><url>
+                <loc>/firebase/2020/07/25/firebase-deploy.html</loc>
+                <lastmod>2020-07-25T09:00:00+09:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
                 <loc>/wordpress/2020/07/25/wp-head.html</loc>
                 <lastmod>2020-07-25T09:00:00+09:00</lastmod>
                 <changefreq>weekly</changefreq>
@@ -31,6 +36,21 @@
             </url><url>
                 <loc>/vscode/2020/07/19/vscode-temporary-open.html</loc>
                 <lastmod>2020-07-19T09:00:00+09:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>/docker/ionic3/2020/05/17/ionic3-in-docker.html</loc>
+                <lastmod>2020-05-17T09:00:00+09:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>/docker/2020/05/17/docker-command.html</loc>
+                <lastmod>2020-05-17T09:00:00+09:00</lastmod>
+                <changefreq>weekly</changefreq>
+                <priority>0.80</priority>
+            </url><url>
+                <loc>/wordpress/2020/04/27/wpsupercache.html</loc>
+                <lastmod>2020-04-27T09:00:00+09:00</lastmod>
                 <changefreq>weekly</changefreq>
                 <priority>0.80</priority>
             </url><url>
