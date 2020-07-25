@@ -7,24 +7,24 @@
 <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
-<title>Vagrantコマンド集</title>
+<title>WP REST APIを利用不可にする</title>
 <!-- Begin Jekyll SEO tag v2.1.0 -->
-<title>Vagrantコマンド集 - ののいち no ログ</title>
-<meta property="og:title" content="Vagrantコマンド集" />
-<meta name="description" content="Vagrant でよく使うコマンドの一覧です。" />
-<meta property="og:description" content="Vagrant でよく使うコマンドの一覧です。" />
-<link rel="canonical" href="/vagrant/command/2019/07/16/command-vagrant.html" />
-<meta property="og:url" content="/vagrant/command/2019/07/16/command-vagrant.html" />
+<title>WP REST APIを利用不可にする - ののいち no ログ</title>
+<meta property="og:title" content="WP REST APIを利用不可にする" />
+<meta name="description" content="Wordpress4.7以降から搭載されたREST API。 使っていないため、無効にする方法を調べました。" />
+<meta property="og:description" content="Wordpress4.7以降から搭載されたREST API。 使っていないため、無効にする方法を調べました。" />
+<link rel="canonical" href="/wordpress/2020/07/21/access-deny-wp-json.html" />
+<meta property="og:url" content="/wordpress/2020/07/21/access-deny-wp-json.html" />
 <meta property="og:site_name" content="ののいち no ログ" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2019-07-16T09:00:00+09:00" />
+<meta property="article:published_time" content="2020-07-21T09:00:00+09:00" />
 <script type="application/ld+json">
 {"@context": "http://schema.org",
 "@type": "BlogPosting",
-"headline": "Vagrantコマンド集",
-"datePublished": "2019-07-16T09:00:00+09:00",
-"description": "Vagrant でよく使うコマンドの一覧です。",
-"url": "/vagrant/command/2019/07/16/command-vagrant.html"}</script>
+"headline": "WP REST APIを利用不可にする",
+"datePublished": "2020-07-21T09:00:00+09:00",
+"description": "Wordpress4.7以降から搭載されたREST API。 使っていないため、無効にする方法を調べました。",
+"url": "/wordpress/2020/07/21/access-deny-wp-json.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -62,67 +62,37 @@
 		</section>
 		<section class="content">
 			<div class="post-container">
-<a class="post-link" href="/vagrant/command/2019/07/16/command-vagrant.html">
-	<h1 class="post-title">Vagrantコマンド集</h1>
+<a class="post-link" href="/wordpress/2020/07/21/access-deny-wp-json.html">
+	<h1 class="post-title">WP REST APIを利用不可にする</h1>
 </a>
 <div class="post-meta">
-	<ul class="post-categories"><li>Vagrant</li><li>Command</li></ul>
-	<div class="post-date"><i class="icon-calendar"></i>2019年07月16日</div>
+	<ul class="post-categories"><li>wordpress</li></ul>
+	<div class="post-date"><i class="icon-calendar"></i>2020年07月21日</div>
 </div>
 <div class="post">
-	<p>Vagrant でよく使うコマンドの一覧です。</p>
+	<p>Wordpress4.7以降から搭載されたREST API。
+使っていないため、無効にする方法を調べました。</p>
 
-<h3 id="vagrantfile-作成">Vagrantfile 作成</h3>
+<p>wordpressの設定で無効にしたかったのですが、
+簡単にできないようなので、.htaccessで対応しました。</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant init
+<h2 id="実行環境">実行環境</h2>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>WordPress 5.4.2
 </code></pre></div></div>
 
-<h3 id="vagrant-環境-起動">Vagrant 環境 起動</h3>
+<h2 id="反映方法">反映方法</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant up
-</code></pre></div></div>
+<p>.htaccess に以下を追記する。</p>
 
-<h3 id="vagrant-環境-停止">Vagrant 環境 停止</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant halt
-</code></pre></div></div>
-
-<h3 id="vagrant-環境-再起動">Vagrant 環境 再起動</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant reload
-</code></pre></div></div>
-
-<h3 id="vagrant-環境-sshログイン">Vagrant 環境 SSHログイン</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant ssh
-Last login: Sun Jun 23 11:08:00 2019 from 10.0.2.2
-[vagrant@local ~]$ su -
-Password: vagrant
-Last login: 日  6月 23 11:08:05 JST 2019 on pts/0
-[root@local ~]# 
-</code></pre></div></div>
-
-<h3 id="vagrant-環境削除">Vagrant 環境　削除</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant destroy
-</code></pre></div></div>
-
-<h3 id="vagrant-環境-box作成">Vagrant 環境 box作成</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant package
-
-</code></pre></div></div>
-
-<h3 id="vagrant-環境-パッケージ化">Vagrant 環境 パッケージ化</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant box add php-dev package.box
-$ vagrant box list
-</code></pre></div></div>
-
-<h3 id="パッケージ化した環境を使った-vagrantfile-作成">パッケージ化した環境を使った Vagrantfile 作成</h3>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ vagrant init php-dev
-</code></pre></div></div>
+<div class="language-ruby highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&lt;</span><span class="no">IfModule</span> <span class="n">mod_rewrite</span><span class="p">.</span><span class="nf">c</span><span class="o">&gt;</span>
+<span class="no">RewriteEngine</span> <span class="no">On</span>
+<span class="no">RewriteCond</span> <span class="sx">%{REQUEST_URI}</span> <span class="o">^</span><span class="sr">/wp-json/</span>
+<span class="no">RewriteCond</span> <span class="sx">%{REQUEST_URI}</span> <span class="o">^</span><span class="sr">/oembed/</span>
+<span class="no">RewriteCond</span> <span class="sx">%{QUERY_STRING}</span> <span class="n">rest_route</span><span class="o">=</span>
+<span class="no">RewriteRule</span> <span class="o">^</span><span class="err">$</span> <span class="o">/</span><span class="p">?</span> <span class="p">[</span><span class="no">R</span><span class="o">=</span><span class="mi">404</span><span class="p">,</span><span class="no">L</span><span class="p">]</span>
+<span class="o">&lt;</span><span class="sr">/IfModule&gt;
+</span></code></pre></div></div>
 
 </div><div id="disqus_thread" style="margin-top:120px"></div>
   <script>
