@@ -11,6 +11,11 @@ layout: default
 		{%- for tag in page.categories -%}
 		<li>{{ tag }}</li>
 		{%- endfor -%}
+  </ul>
+  <ul class="post-categories">
+		{%- for tag in page.tags -%}
+		<li>#{{ tag }}</li>
+		{%- endfor -%}
 	</ul>
 	<div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
 </div>
