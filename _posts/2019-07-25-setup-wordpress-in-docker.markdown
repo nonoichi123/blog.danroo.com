@@ -4,6 +4,7 @@ comments: true
 title:  "Docker でWordPress環境を作る"
 date:   2019-07-25 00:00:00 +0000
 categories: WordPress Docker
+redirect_to: https://www.danroo.com/web/wordpress/post-203/
 ---
 Docker を使って、WordPress環境を作りましたので、
 Dockerのインストールから、WordPress初期画面表示までの流れをまとめました。

@@ -4,6 +4,7 @@ comments: true
 title:  "OneSignal を使って、Webプッシュ配信を行う"
 date:   2019-07-16 00:00:00 +0000
 categories: OneSignal WebPush
+redirect_to: https://www.danroo.com/app/ionic/post-328/
 ---
 Ionic アプリで、OneSignal を使ってWebプッシュ配信を行う手順です。
 

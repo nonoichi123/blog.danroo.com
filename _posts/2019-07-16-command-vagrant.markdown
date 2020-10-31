@@ -4,6 +4,7 @@ comments: true
 title:  "Vagrantコマンド集"
 date:   2019-07-16 00:00:00 +0000
 categories: Vagrant Command
+redirect_to: https://www.danroo.com/infra/vagrant/post-324/
 ---
 Vagrant でよく使うコマンドの一覧です。
 

@@ -4,6 +4,7 @@ comments: true
 title:  "Macで簡単にパスワードを作りたい"
 date:   2019-07-26 00:00:00 +0000
 categories: Mac
+redirect_to: https://www.danroo.com/tool/post-172/
 ---
 
 Macに標準搭載されている、キーチェーンでパスワードを生成してくれるのですが、

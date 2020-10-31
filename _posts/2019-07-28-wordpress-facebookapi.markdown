@@ -4,6 +4,7 @@ comments: true
 title:  "facebook Graph API を使って、フィードを取得する"
 date:   2019-07-28 00:00:00 +0000
 categories: Facebook GraphApi
+redirect_to: https://www.danroo.com/web/webapi/post-282/
 ---
 facebook Graph API を使って、Facebookページのフィード情報を取得する流れを整理しました。
 

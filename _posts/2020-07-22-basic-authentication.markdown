@@ -4,6 +4,7 @@ comments: true
 title:  ".htaccessでベーシック認証を行う"
 date:   2020-07-22 00:00:00 +0000
 categories: apache htaccess
+redirect_to: https://www.danroo.com/infra/htaccess/post-27/
 ---
 .htaccessを使った、ベーシック認証の設定方法です。
 

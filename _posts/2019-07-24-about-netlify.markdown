@@ -4,6 +4,7 @@ comments: true
 title:  "Netlify を使ってみた"
 date:   2019-07-24 00:00:00 +0000
 categories: WebService
+redirect_to: https://www.danroo.com/tool/post-312/
 ---
 NetlifyというWebサービスを使ってみましたので、共有します。
 

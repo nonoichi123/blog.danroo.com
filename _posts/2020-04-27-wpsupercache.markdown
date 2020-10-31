@@ -4,6 +4,7 @@ comments: true
 title:  "WPSuperCache でトップページだけキャッシュされない"
 date:   2020-04-27 00:00:00 +0000
 categories: wordpress
+redirect_to: https://www.danroo.com/web/wordpress/post-169/
 ---
 WPSuperCache でキャッシュを有効化したところ、トップページだけキャッシュされない事象が発生しました。
 別のプラグインの設定が悪さをしていました。原因と解消方法を載せておきます。

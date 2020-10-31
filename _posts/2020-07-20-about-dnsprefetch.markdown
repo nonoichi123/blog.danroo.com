@@ -4,6 +4,7 @@ comments: true
 title:  "DNS Prefetch（プリフェッチ）とはなにか"
 date:   2020-07-20 00:00:00 +0000
 categories: technology
+redirect_to: https://www.danroo.com/knowledge/post-139/
 ---
 Wordpressのソースを見ていて、DNS PreFetch という仕組みを見つけたので、どのようなものなのか調べました。
 

@@ -28,3 +28,4 @@ theme: plainwhite
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-redirect-from

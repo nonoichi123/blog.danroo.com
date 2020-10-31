@@ -4,6 +4,7 @@ comments: true
 title:  "Jekyll でサイトを作る"
 date:   2019-07-17 00:00:00 +0000
 categories: Jekyll
+redirect_to: https://www.danroo.com/infra/jekyll/post-322/
 ---
 Jekyll はプレーンテキストで静的サイトやブログが作成できるサービスです。  
 GitHub pagesやFirebase Hosting、Heroku、レンタルサーバなどの  

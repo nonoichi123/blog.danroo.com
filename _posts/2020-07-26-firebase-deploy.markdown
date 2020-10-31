@@ -4,6 +4,7 @@ comments: true
 title:  "firebase deploy で権限エラーになる"
 date:   2020-07-25 00:00:00 +0000
 categories: firebase
+redirect_to: https://www.danroo.com/infra/firebase/post-112/
 ---
 firebase ホスティングで、deployしようとしたら、権限エラーが発生した。
 原因調査結果を残しておきます。

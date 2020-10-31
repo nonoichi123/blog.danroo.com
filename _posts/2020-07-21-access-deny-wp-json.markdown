@@ -4,6 +4,7 @@ comments: true
 title:  "WP REST APIを利用不可にする"
 date:   2020-07-21 00:00:00 +0000
 categories: wordpress
+redirect_to: https://www.danroo.com/web/wordpress/post-121/
 ---
 Wordpress4.7以降から搭載されたREST API。
 使っていないため、無効にする方法を調べました。

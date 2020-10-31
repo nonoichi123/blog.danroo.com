@@ -4,6 +4,7 @@ comments: true
 title:  "Vagrantfileだけでphp環境を構築する"
 date:   2019-07-16 00:00:00 +0000
 categories: Vagrant VirtualBox
+redirect_to: https://www.danroo.com/infra/vagrant/post-31/
 ---
 boxファイルを共有して、チームメンバー内で開発環境するのも良いのですが、  
 boxファイルはサイズが大きくなってしまうので、Vagrantfileだけでphp環境を構築できるよう、  

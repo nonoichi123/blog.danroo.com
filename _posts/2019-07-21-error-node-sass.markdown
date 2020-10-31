@@ -4,6 +4,7 @@ comments: true
 title:  "ionic serve実行時に、node-sassのエラーが出た"
 date:   2019-07-21 00:00:00 +0000
 categories: NodeJs
+redirect_to: https://www.danroo.com/app/ionic/post-316/
 ---
 ionic serve をしたときに、node_modules/node-sass/vendor 見つからないというエラーが発生しましたので、
 node-sassのインストールとリビルドを行いました。

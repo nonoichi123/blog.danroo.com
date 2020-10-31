@@ -4,6 +4,7 @@ comments: true
 title:  "ハローワーク求人情報CSVをバッチで取得する"
 date:   2019-07-18 00:00:00 +0000
 categories: ShellScript
+redirect_to: https://www.danroo.com/web/shellscript/post-320/
 ---
 ハローワーク求人情報提供サービスから求人情報CSVファイルを日次で取得したくて、
 スクリプトを作成しました。

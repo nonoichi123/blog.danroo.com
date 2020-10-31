@@ -4,6 +4,7 @@ comments: true
 title:  "[vscode] シングルクリックでファイルを開いても、前のファイルを上書きしないようにする"
 date:   2020-07-19 00:00:00 +0000
 categories: vscode
+redirect_to: https://www.danroo.com/tool/post-141/
 ---
 vscodeを使っていて、ファイルを開いていたのに、いつの間にか閉じてしまっている事象があったので、原因を調べました。
 

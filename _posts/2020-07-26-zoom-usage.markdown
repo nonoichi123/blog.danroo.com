@@ -4,6 +4,7 @@ comments: true
 title:  "zoom の始め方から使い方をまとめる"
 date:   2020-07-26 00:00:00 +0000
 categories: zoom
+redirect_to: https://www.danroo.com/tool/post-82/
 ---
 Microsoft Edge でのzoomの初期設定と簡単な使い方をまとめました。
 

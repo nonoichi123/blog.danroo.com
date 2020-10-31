@@ -4,6 +4,7 @@ comments: true
 title:  "Heroku のProcfileが動作してくれない"
 date:   2019-07-23 00:00:00 +0000
 categories: Heroku
+redirect_to: https://www.danroo.com/infra/heroku/post-212/
 ---
 Procfile がうまく認識してくれない事象がありました。
 

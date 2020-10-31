@@ -4,6 +4,7 @@ comments: true
 title:  "独自ドメインメールをGmailで受信する"
 date:   2019-07-29 00:00:00 +0000
 categories: Gmail
+redirect_to: https://www.danroo.com/tool/post-268/
 ---
 独自ドメインのメールを、Gmailで送受信する手順となります。  
 Gmailを既に利用していて、スマホ端末でメールを受信したいときには、便利な設定です。

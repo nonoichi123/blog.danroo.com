@@ -4,6 +4,7 @@ comments: true
 title:  "WordPress(ワードプレス)脆弱性診断を試してみる"
 date:   2019-07-25 00:00:00 +0000
 categories: WordPress
+redirect_to: https://www.danroo.com/web/wordpress/post-174/
 ---
 WordPress のセキュリティチェック方法を調べてみたら、  
 URLを入力するだけで診断してくれるサイトがありました。

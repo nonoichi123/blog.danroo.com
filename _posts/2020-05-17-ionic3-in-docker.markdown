@@ -4,6 +4,7 @@ comments: true
 title:  "Ionic3系の環境をDockerで構築する"
 date:   2020-05-17 00:00:00 +0000
 categories: Docker Ionic3
+redirect_to: https://www.danroo.com/app/ionic/post-152/
 ---
 Ionic3系の環境をDockerで構築したので、設定を残しておきます。
 
